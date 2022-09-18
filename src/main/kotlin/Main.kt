@@ -18,8 +18,8 @@ fun howMuchHours (seconds: Int) : String = when {
 
 fun agoToText() = when {
     seconds in 0..60 -> println("Был(а) в сети только что.")
-    seconds in 60..60*60 -> println("Был(а) в сети " + (seconds/60) + howMuchMinutes(seconds))
-    seconds in 60*60 + 1 .. 24*60*60 -> println("Был(а) в сети " + seconds/3600 + howMuchHours(seconds))
+    seconds in 60..60*60 -> println("Был(а) в сети " + minute + howMuchMinutes(seconds))
+    seconds in 60*60 + 1 .. 24*60*60 -> println("Был(а) в сети " + hour + howMuchHours(seconds))
     seconds in 24*60*60+1..48*60*60 -> println("Был(а) в сети вчера")
     seconds in 48*60*6+1 .. 72*60*60 -> println("Был(а) в сети позавчера")
     seconds > 72*60*60 -> println("Был(а) в сети давно")
